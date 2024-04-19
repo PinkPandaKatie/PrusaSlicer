@@ -2878,6 +2878,9 @@ void GLCanvas3D::on_char(wxKeyEvent& evt)
             }
             break;
         }
+        case ' ':
+            wxGetApp().obj_list()->toggle_printable_state();
+            break;
         default:  { evt.Skip(); break; }
         }
     }

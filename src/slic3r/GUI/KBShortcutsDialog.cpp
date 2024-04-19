@@ -177,6 +177,7 @@ void KBShortcutsDialog::fill_shortcuts()
             { "O", L("Zoom out") },
             { "Tab", L("Switch between Editor/Preview") },
             { "Shift+Tab", L("Collapse/Expand the sidebar") },
+            { "Space", L("Set selected items as Printable/Unprintable") },
 #ifdef _WIN32
             { ctrl + "M", L("Show/Hide 3Dconnexion devices settings dialog, if enabled") },
 #else
