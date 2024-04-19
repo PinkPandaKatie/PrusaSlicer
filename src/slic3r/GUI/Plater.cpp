@@ -5107,7 +5107,7 @@ void Plater::increase_instances(size_t num, int obj_idx, int inst_idx)
 
     bool was_one_instance = model_object->instances.size()==1;
 
-    double offset_base = canvas3D()->get_size_proportional_to_max_bed_size(0.05);
+    double offset_base = 10.0;
     double offset = offset_base;
     for (size_t i = 0; i < num; i++, offset += offset_base) {
         Vec3d offset_vec = model_instance->get_offset() + Vec3d(offset, offset, 0.0);

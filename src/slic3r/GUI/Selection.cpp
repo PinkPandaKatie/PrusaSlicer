@@ -2971,7 +2971,7 @@ void Selection::paste_objects_from_clipboard()
     for (const ModelObject* src_object : src_objects)
     {
         ModelObject* dst_object = m_model->add_object(*src_object);
-        double offset = wxGetApp().plater()->canvas3D()->get_size_proportional_to_max_bed_size(0.05);
+        double offset = 10.0;
         Vec3d displacement(offset, offset, 0.0);
         for (ModelInstance* inst : dst_object->instances)
         {
